@@ -1,12 +1,12 @@
 function steamrollArray(arr) {
   // I'm a steamroller, baby
   let newArray = [];
-  let flattenArray = arg => {
-    if (!Array.isArray(arg)) {
-      newArray.push(arg);
+  let flattenArray = item => {
+    if (!Array.isArray(item)) {
+      newArray.push(item);
     } else {
-      for (let i in arg) {
-        flattenArray(arg[i]);
+      for (let i in item) {
+        flattenArray(item[i]);
       }
     }
   }
